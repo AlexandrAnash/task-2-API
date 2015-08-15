@@ -61,7 +61,7 @@ for (i = 0; i < 3; i++) {
                 var cityCountinent = window.prompt("Write city:");
                 var c = [], cc = [], p = 0;
                 for (i = 0; i < responses['/countries'].length; i++) {
-                    if (responses['/countries'][i].continent === customCountinent) {
+                    if (responses['/countries'][i].continent === customCountinent || responses['/countries'][i].name === customCountinent) {
                         c.push(responses['/countries'][i].name);
                     }
                 }
